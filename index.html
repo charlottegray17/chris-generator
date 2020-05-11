@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Messina Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Messina Film/TV Generator</h1>
+      <div class="header-intro">
+        <h2>So you’d like to see a little Messina would ya?</h2>
+        <p>This Long Island native is a charming and diverse actor with the filmography to match. In case you’d like a little suggestion of where to start, pick from the options below for a tailored suggestion.
+  </p>
+      </div>
+    </header>
+
+    <main>
+      <form class="form" method="post">
+
+        <h3 id="option-header">Indie or Studio?</h3>
+        <input type="radio" id="indie" name="project-type" value="indie">
+        <label for="indie">Indie</label>
+        <input type="radio" id="studio" name="project-type" value="studio">
+        <label for="studio">Studio</label>
+
+        <h3 id="option-header">Pick a genre</h3>
+        <input type="checkbox" id="romance" name="genre" value="romance">
+        <label for="romance">Romance</label>
+        <input type="checkbox" id="drama" name="genre" value="drama">
+        <label for="drama">Drama</label>
+        <input type="checkbox" id="angst" name="genre" value="angst">
+        <label for="angst">Angst</label>
+        <input type="checkbox" id="comedy" name="genre" value="comedy">
+        <label for="comedy">Comedy</label>
+
+        <h3 id="option-header">Film or TV?</h3>
+        <input type="radio" id="film" name="project-format" value="film">
+        <label for="film">Film</label>
+        <input type="radio" id="tv" name="project-type" value="tv">
+        <label for="tv">TV</label>
+
+        <h3 id="option-header">Moody Chris or Jolly Chris?</h3>
+        <input type="radio" id="moody" name="chris-version" value="moody">
+        <label for="moody">Moody Chris</label>
+        <input type="radio" id="jolly" name="chris-version" value="jolly">
+        <label for="jolly">Jolly Chris</label>
+
+        <h3 id="option-header">Tame or Steamy?</h3>
+        <input type="radio" id="tame" name="pg-rating" value="tame">
+        <label for="tame">Tame</label>
+        <input type="radio" id="steamy" name="pg-rating" value="steamy">
+        <label for="steamy">Steamy</label>
+
+        <div class="submit">
+          <button type="button" name="button" onclick="displayResults() ">Submit</button>
+        </div>
+
+      </form>
+
+      <div id="form-results" style="display: none;">
+        <h2 id="watch-title" class="watch-title">ddd</h2>
+        <h3 id="suggestion-title-reveal"></h3>
+        <img id="watch-image-reveal"src="" alt="">
+        <p id="suggestion-description"></p>
+
+        <h4 id="start-again">fff</h4>
+        <a id="start-over-button" href="index.html"><button type="button" name="button" style="none">Start Over</button></a>
+      </div>
+    </main>
+
+    <script>
+
+    function displayResults() {
+      var x = document.getElementById("form-results");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
+  </body>
+</html>
